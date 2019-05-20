@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/entries_layout_of_homemate_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/entries_layout_of_homemate_view_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="0"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/entries_layout_of_homemate_view_house_imageView"
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitXY"
+        android:src="@mipmap/house" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/entries_layout_of_homemate_view_house_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ev ilanı (sayı)"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/rentamout_homemate_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Kira miktarı ne?"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/rentamout_int_homemate_view"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="25dp"
+                    android:text="200 TL"
+                    android:textAlignment="viewEnd" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/num_of_students_living_at_home_homemate_view"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Evde yaşayan kişi sayısı"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/num_of_students_living_at_home_int_homemate_view"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="100"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/num_of_students_looking_for_home_homemate_view"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Aranan kişi sayısı"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/num_of_students_looking_for_home_int_homemate_view"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="100"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/budget_homemate_view"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Aidat"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/budget_int_homemate_view"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:paddingRight="25dp"
+                    android:text="100"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/room_number_homemate_view"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Oda sayısı"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/room_number_int_homemate_view"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_weight="1"
+                    android:text="100"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/heating_type_homemate_view"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Isınma tipi"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/heating_type_text_homemate_view"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="ısınma tipi ısınma tipi ısınma tipi ısınma tipi ısınma tipi ısınma tipi " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/internet_homemate_view"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="İnternet bağlantısı"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/internet_text_homemate_view"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="internet bağlantısı internet bağlantısıinternet bağlantısı internet bağlantısı  " />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/location_homemate_view"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Konum"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/location_text_homemate_view"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="konum konum konum konum konum konum konum konum konum konum konum konum " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/gender_homemate_view"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Evde yaşayanların cinsiyeti"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/gender_text_homemate_view"
+                android:layout_width="286dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/smoking_status_homemate_view"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Sigara kullanım"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/smoking_status_text_homemate_view"
+                android:layout_width="286dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet cinsiyet " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/pet_homemate_view"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Evcil hayvan "
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/pet_text_homemate_view"
+                android:layout_width="286dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="evcil hayvan evcil hayvan evcil hayvan evcil hayvan " />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/houseowner_homemate_view"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Ev arkadaşı arayan kişinin ismi"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/houseowner_text_homemate_view"
+                android:layout_width="286dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="ev sahibinin ismiev sahibinin ismi ev sahibinin ismi  " />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/houseowner_department_homemate_view"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="60dp"
+                    android:text="Ev arkadaşı arayan kişinin okuduğu bölüm"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/houseowner_department_text_homemate_view"
+                android:layout_width="286dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:text="Ev sahibinin okuduğu bölüm Ev sahibinin okuduğu bölüm" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/houseowner_age_homemate_view"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Ev arkadaşı arayan kişinin yaşı"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/houseowner_age_text_homemate_view"
+                    android:layout_width="286dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:paddingRight="50dp"
+                    android:text="100"
+                    android:textAlignment="center" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/houseowner_mail_homemate_view"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Ev arkadaşı arayan kişinin mail adresi"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/houseowner_mail_text_homemate_view"
+                android:layout_width="286dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingRight="30dp"
+                android:text="mail mail mail mail mail " />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/houseowner_phonenumber_homemate_view"
+                    android:layout_width="280dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:paddingRight="60dp"
+                    android:text="Ev arkadaşı arayan kişinin telefon numarası"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/houseowner_phonenumber_text_homemate_view"
+                android:layout_width="286dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:paddingRight="30dp"
+                android:text="telefon telefon telefon telefon " />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

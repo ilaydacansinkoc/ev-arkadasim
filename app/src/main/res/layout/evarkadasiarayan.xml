@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/username_signup"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Kullanıcı Adı"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/password_signup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/password_signup"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/password_signup"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Şifre"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@+id/namesurname_signup"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/namesurname_signup"
+        app:layout_constraintTop_toBottomOf="@+id/username_signup" />
+
+    <EditText
+        android:id="@+id/namesurname_signup"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="İsim Soyisim"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/age_signup"
+        app:layout_constraintStart_toStartOf="@+id/age_signup"
+        app:layout_constraintTop_toBottomOf="@+id/password_signup" />
+
+    <EditText
+        android:id="@+id/major_signup"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Okuduğun Bölüm"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/doktora_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email_signup" />
+
+    <RadioButton
+        android:id="@+id/lisans_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="Lisans"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/major_signup" />
+
+    <RadioButton
+        android:id="@+id/yukseklisans_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Yüksek Lisans"
+        app:layout_constraintStart_toEndOf="@+id/lisans_signup"
+        app:layout_constraintTop_toBottomOf="@+id/major_signup" />
+
+    <RadioButton
+        android:id="@+id/doktora_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:text="Doktora"
+        app:layout_constraintStart_toEndOf="@+id/yukseklisans_signup"
+        app:layout_constraintTop_toBottomOf="@+id/major_signup" />
+
+    <EditText
+        android:id="@+id/age_signup"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Yaşın"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/email_signup"
+        app:layout_constraintStart_toStartOf="@+id/email_signup"
+        app:layout_constraintTop_toBottomOf="@+id/namesurname_signup" />
+
+    <EditText
+        android:id="@+id/email_signup"
+        android:layout_width="0dp"
+        android:layout_height="39dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="E-mail adresin"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="@+id/major_signup"
+        app:layout_constraintStart_toStartOf="@+id/major_signup"
+        app:layout_constraintTop_toBottomOf="@+id/age_signup" />
+
+    <EditText
+        android:id="@+id/phoneno_signup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Telefon numaran"
+        android:inputType="phone"
+        app:layout_constraintBottom_toTopOf="@+id/nextpage_signup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/yukseklisans_signup" />
+
+    <Button
+        android:id="@+id/nextpage_signup"
+        android:layout_width="100dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="41dp"
+        android:background="@drawable/buttonshape"
+        android:onClick="onHouseholderNextButtonClick"
+        android:shadowColor="#A8A8A8"
+        android:shadowDx="0"
+        android:shadowDy="0"
+        android:shadowRadius="5"
+        android:text="İlerle"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

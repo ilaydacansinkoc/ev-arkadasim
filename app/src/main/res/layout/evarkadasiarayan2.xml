@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/montly_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Aylık Kira"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/number_of_people_in_house"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Evde kaç kişi yaşıyor?"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/number_of_people_lookingfor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Kaç tane arkadaş arıyorsun?"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/aidat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Aidat"
+            android:inputType="textPersonName" />
+
+        <RadioButton
+            android:id="@+id/esyali_radiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Eşyalı" />
+
+        <RadioButton
+            android:id="@+id/esyasiz_radiobutton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:text="Eşyasız" />
+
+        <EditText
+            android:id="@+id/number_of_rooms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Oda sayısı"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/heating_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Isınma türü"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/internet_connection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="İnternet bağlantısı"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Konum"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/genders_of_housemates"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Evde kalanların cinsiyetleri"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/smoking_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Sigara içiyor musunuz?"
+            android:inputType="textCapSentences|textPersonName" />
+
+        <EditText
+            android:id="@+id/has_pet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:ems="10"
+            android:hint="Evcil hayvanınız var mı?"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/complete_signup_as_householder"
+            android:layout_width="100dp"
+            android:layout_height="44dp"
+            android:layout_marginLeft="250dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="onHouseHolderSignUpCompletedClick"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Kaydı tamamla" />
+
+    </LinearLayout>
+</ScrollView>

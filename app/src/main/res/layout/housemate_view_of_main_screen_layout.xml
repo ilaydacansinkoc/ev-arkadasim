@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/housemate_view_of_main_screen_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        style="@android:style/Widget.DeviceDefault.FastScroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:fillViewport="true"
+        android:scrollbarStyle="insideOverlay">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <include
+                layout="@layout/main_screen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </include>
+
+
+            <include
+                android:id="@+id/ev_ilani_1"
+                layout="@layout/ev_ilani_layout"
+                android:layout_width="match_parent"
+                android:layout_height="650dp">
+
+            </include>
+
+            <include
+                android:id="@+id/ev_ilani_2"
+                layout="@layout/ev_ilani_layout"
+                android:layout_width="match_parent"
+                android:layout_height="650dp">
+
+            </include>
+
+            <include
+                android:id="@+id/ev_ilani_3"
+                layout="@layout/ev_ilani_layout"
+                android:layout_width="match_parent"
+                android:layout_height="650dp">
+
+            </include>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

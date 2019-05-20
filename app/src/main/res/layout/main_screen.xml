@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mainscreen_username"
+                android:layout_width="358dp"
+                android:layout_height="30dp"
+                android:text="Merhaba Kullanıcı Adı"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mainscreen_password"
+                android:layout_width="200dp"
+                android:layout_height="30dp"
+                android:text="Şifreniz şifre"
+                android:textAlignment="viewStart"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mainscreen_mailaddress"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:text="Mail Adresiniz mailadres"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/mainscreen_usertype"
+                android:layout_width="333dp"
+                android:layout_height="30dp"
+                android:text="Kullanıcı tipi kullanıcı tipi"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>

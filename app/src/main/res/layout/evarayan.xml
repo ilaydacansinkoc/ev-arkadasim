@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/homemate_username_signup"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Kullanıcı Adı"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/homemate_password_signup"
+            app:layout_constraintEnd_toEndOf="@+id/homemate_password_signup"
+            app:layout_constraintStart_toStartOf="@+id/homemate_password_signup"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/homemate_password_signup"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Şifre"
+            android:inputType="textPassword"
+            app:layout_constraintBottom_toTopOf="@+id/name_surname_hommate_signup"
+            app:layout_constraintEnd_toEndOf="@+id/name_surname_hommate_signup"
+            app:layout_constraintStart_toStartOf="@+id/name_surname_hommate_signup" />
+
+        <EditText
+            android:id="@+id/name_surname_hommate_signup"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="İsim Soyisim"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/age_homemate_signup"
+            app:layout_constraintEnd_toEndOf="@+id/age_homemate_signup"
+            app:layout_constraintStart_toStartOf="@+id/age_homemate_signup" />
+
+        <EditText
+            android:id="@+id/majority_hommate_signup"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="32dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:hint="Okuduğun Bölüm"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/doktora_homemate_signup"
+            app:layout_constraintEnd_toEndOf="@+id/doktora_homemate_signup"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/lisans_homemate_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:text="Lisans"
+            app:layout_constraintBottom_toTopOf="@+id/phoneno_homemate_signup"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <RadioButton
+            android:id="@+id/yukseklisans_homemate_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="Yüksek Lisans"
+            app:layout_constraintBottom_toTopOf="@+id/phoneno_homemate_signup"
+            app:layout_constraintEnd_toEndOf="@+id/phoneno_homemate_signup" />
+
+        <RadioButton
+            android:id="@+id/doktora_homemate_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="24dp"
+            android:text="Doktora"
+            app:layout_constraintBottom_toTopOf="@+id/phoneno_homemate_signup"
+            app:layout_constraintStart_toEndOf="@+id/yukseklisans_homemate_signup" />
+
+        <EditText
+            android:id="@+id/age_homemate_signup"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Yaşın"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/email_homemate_signup"
+            app:layout_constraintEnd_toEndOf="@+id/email_homemate_signup"
+            app:layout_constraintStart_toStartOf="@+id/email_homemate_signup" />
+
+        <EditText
+            android:id="@+id/email_homemate_signup"
+            android:layout_width="0dp"
+            android:layout_height="39dp"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="E-mail adresin"
+            android:inputType="textEmailAddress"
+            app:layout_constraintBottom_toTopOf="@+id/majority_hommate_signup"
+            app:layout_constraintEnd_toEndOf="@+id/majority_hommate_signup"
+            app:layout_constraintStart_toStartOf="@+id/majority_hommate_signup" />
+
+        <EditText
+            android:id="@+id/phoneno_homemate_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:hint="Telefon numaran"
+            android:inputType="phone"
+            app:layout_constraintBottom_toTopOf="@+id/butce_homemate_signup"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <EditText
+            android:id="@+id/butce_homemate_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:ems="10"
+            android:hint="Bütçe"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@+id/smokingstatus_homemate_signup"
+            app:layout_constraintStart_toStartOf="@+id/phoneno_homemate_signup" />
+
+        <EditText
+            android:id="@+id/smokingstatus_homemate_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginStart="16dp"
+            android:ems="10"
+            android:hint="Sigara içiyor musun?"
+            android:inputType="textPersonName"
+            app:layout_constraintBottom_toTopOf="@+id/complete_homemate_signup"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <Button
+            android:id="@+id/complete_homemate_signup"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/buttonshape"
+            android:onClick="onHomemateSignUp"
+            android:shadowColor="#A8A8A8"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="Kaydı tamamla"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
